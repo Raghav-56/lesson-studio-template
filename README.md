@@ -8,10 +8,13 @@ Keep input material in `sources/` in the private lesson repository. Put Manim so
 
 ## Authoring tools
 
-Use Pele for Mermaid diagrams, KaTeX for equations, and Observable Plot for data charts. Studio provides a local render command and a browser-ready Plot bundle in its build input. For a standalone template checkout, run `npm ci` once to install the pinned tools.
+Pele is part of the template. Studio also gives authoring tasks a local render command for Mermaid and MathML, plus a browser-ready Observable Plot bundle.
+
+In a standalone template checkout, run `npm ci` for the core tools. Run `npm run tools` to see the optional profiles. Add a profile with `npm run tools -- <profile>`, such as `npm run tools -- equations` for KaTeX or `npm run tools -- geometry` for JSXGraph. Each profile pins its packages and updates the lesson's lockfile.
 
 ```sh
 node tools/render.mjs mermaid diagram.mmd > diagram.svg
+npm run tools -- equations
 node tools/render.mjs math equation.tex > equation.mathml
 ```
 
