@@ -8,3 +8,5 @@ Use the creator's request and relevant installed skills to choose the teaching a
 - Keep Manim source in `scenes/`. If video or audio helps, render it to `site/video.mp4` or `site/audio.mp3` and reference the matching relative path.
 
 Check the lesson on a phone and try its main activity before handing it back. Studio saves checked files to the private lesson repository's `main` and handles publication.
+
+See [the authoring tools](README.md#authoring-tools) for optional diagrams, equations, and charts.
