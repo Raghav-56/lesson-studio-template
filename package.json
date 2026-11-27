@@ -6,9 +6,10 @@
   "engines": {
     "node": ">=22.13"
   },
+  "scripts": {
+    "tools": "node tools/add.mjs"
+  },
   "dependencies": {
-    "@observablehq/plot": "0.6.19",
-    "katex": "0.19.1",
     "pele": "1.13.0"
   }
 }
